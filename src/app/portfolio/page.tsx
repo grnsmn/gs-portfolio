@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Image from "next/image";
 
 const Portfolio: NextPage = () => {
   return (
@@ -31,8 +32,15 @@ const Portfolio: NextPage = () => {
             <div className="portfolio-item padd-15" data-category="cross-platform-app">
               <div className="portfolio-item-inner shadow-dark">
                 <a href="https://vocaltrainer.netlify.app" target="_blank" rel="noopener noreferrer">
-                  <div className="portfolio-img">
-                    <img src="/imgs/portfolio/VocalTrainer.jpeg" alt="portfolio" />
+                <div className="portfolio-img">
+                    <div style={{ position: 'relative', width: '100%', height: '14rem' }}>
+                      <Image
+                        src="/imgs/portfolio/VocalTrainer.jpeg"
+                        alt="VocaltrainerApp"
+                        layout="fill"
+                        objectFit="cover"
+                      />
+                    </div>
                   </div>
                   <div className="portfolio-info">
                       <h4>Vocal Trainer</h4>
@@ -49,7 +57,14 @@ const Portfolio: NextPage = () => {
               <div className="portfolio-item-inner shadow-dark">
                 <a href="https://sabaothctdocs.netlify.app" target="_blank" rel="noopener noreferrer">
                   <div className="portfolio-img">
-                    <img src="/imgs/portfolio/SabaothCTDocs.jpeg" alt="portfolio" />
+                    <div style={{ position: 'relative', width: '100%', height: '14rem' }}>
+                      <Image
+                        src="/imgs/portfolio/SabaothCTDocs.jpeg"
+                        alt="SabaothCTDocs"
+                        layout="fill"
+                        objectFit="cover"
+                      />
+                    </div>
                   </div>
                   <div className="portfolio-info">
                       <h4>Documentation APS Sabaoth Catania</h4>
