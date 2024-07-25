@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Image from "next/image";
 
 const Portfolio: NextPage = () => {
   return (
@@ -12,10 +13,10 @@ const Portfolio: NextPage = () => {
           </div>
           <div className="row">
             <div className="portfolio-filter padd-15">
-              <button type="button" className="active" data-filter="all">
+              {/* <button type="button" className="active" data-filter="all">
                 All
-              </button>
-              <button type="button" data-filter="graphics-design">
+              </button> */}
+              {/* <button type="button" data-filter="graphics-design">
                 Graphics Design
               </button>
               <button type="button" data-filter="web-design">
@@ -23,103 +24,58 @@ const Portfolio: NextPage = () => {
               </button>
               <button type="button" data-filter="wordpress">
                 Wordpress
-              </button>
+              </button> */}
             </div>
           </div>
           <div className="row">
             {/* Portfolio Item */}
-            <div className="portfolio-item padd-15" data-category="web-design">
+            <div className="portfolio-item padd-15" data-category="cross-platform-app">
               <div className="portfolio-item-inner shadow-dark">
+                <a href="https://vocaltrainer.netlify.app" target="_blank" rel="noopener noreferrer">
                 <div className="portfolio-img">
-                  <img src="/imgs/portfolio/1.jpg" alt="portfolio" />
-                </div>
-                <div className="portfolio-info">
-                  <h4>Web Design</h4>
-                  <div className="icon">
-                    <i className="fa fa-search" />
+                    <div style={{ position: 'relative', width: '100%', height: '14rem' }}>
+                      <Image
+                        src="/imgs/portfolio/VocalTrainer.jpeg"
+                        alt="VocalTrainerApp"
+                        layout="fill"
+                        objectFit="cover"
+                      />
+                    </div>
                   </div>
-                </div>
+                  <div className="portfolio-info">
+                      <h4>Vocal Trainer</h4>
+                      <div className="icon">
+                        <i className="fa fa-chevron-right"></i>
+                      </div>
+                  </div>
+                </a>
               </div>
             </div>
-            {/* Portfolio Item End*/}
+            {/* Portfolio Item End */}
             {/* Portfolio Item */}
-            <div className="portfolio-item padd-15" data-category="web-design">
+            <div className="portfolio-item padd-15" data-category="cross-platform-app">
               <div className="portfolio-item-inner shadow-dark">
-                <div className="portfolio-img">
-                  <img src="/imgs/portfolio/2.jpg" alt="portfolio" />
-                </div>
-                <div className="portfolio-info">
-                  <h4>Web Design</h4>
-                  <div className="icon">
-                    <i className="fa fa-search" />
+                <a href="https://sabaothctdocs.netlify.app" target="_blank" rel="noopener noreferrer">
+                  <div className="portfolio-img">
+                    <div style={{ position: 'relative', width: '100%', height: '14rem' }}>
+                      <Image
+                        src="/imgs/portfolio/SabaothCTDocs.jpeg"
+                        alt="SabaothCTDocs"
+                        layout="fill"
+                        objectFit="cover"
+                      />
+                    </div>
                   </div>
-                </div>
+                  <div className="portfolio-info">
+                      <h4>Documentation APS Sabaoth Catania</h4>
+                      <div className="icon">
+                        <i className="fa fa-chevron-right"></i>
+                      </div>
+                  </div>
+                </a>
               </div>
             </div>
-            {/* Portfolio Item End*/}
-            {/* Portfolio Item */}
-            <div className="portfolio-item padd-15" data-category="web-design">
-              <div className="portfolio-item-inner shadow-dark">
-                <div className="portfolio-img">
-                  <img src="/imgs/portfolio/3.jpg" alt="portfolio" />
-                </div>
-                <div className="portfolio-info">
-                  <h4>Web Design</h4>
-                  <div className="icon">
-                    <i className="fa fa-search" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* Portfolio Item End*/}
-            {/* Portfolio Item */}
-            <div
-              className="portfolio-item padd-15"
-              data-category="graphics-design"
-            >
-              <div className="portfolio-item-inner shadow-dark">
-                <div className="portfolio-img">
-                  <img src="/imgs/portfolio/4.jpg" alt="portfolio" />
-                </div>
-                <div className="portfolio-info">
-                  <h4>Banner Design</h4>
-                  <div className="icon">
-                    <i className="fa fa-search" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* Portfolio Item End*/}
-            {/* Portfolio Item */}
-            <div className="portfolio-item padd-15" data-category="wordpress">
-              <div className="portfolio-item-inner shadow-dark">
-                <div className="portfolio-img">
-                  <img src="/imgs/portfolio/5.jpg" alt="portfolio" />
-                </div>
-                <div className="portfolio-info">
-                  <h4>Wordpress</h4>
-                  <div className="icon">
-                    <i className="fa fa-search" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* Portfolio Item End*/}
-            {/* Portfolio Item */}
-            <div className="portfolio-item padd-15" data-category="web-design">
-              <div className="portfolio-item-inner shadow-dark">
-                <div className="portfolio-img">
-                  <img src="/imgs/portfolio/6.jpg" alt="portfolio" />
-                </div>
-                <div className="portfolio-info">
-                  <h4>Web Design</h4>
-                  <div className="icon">
-                    <i className="fa fa-search" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* Portfolio Item End*/}
+            {/* Portfolio Item End */}
           </div>
         </div>
       </section>
