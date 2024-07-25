@@ -36,7 +36,7 @@ const Portfolio: NextPage = () => {
                     <div style={{ position: 'relative', width: '100%', height: '14rem' }}>
                       <Image
                         src="/imgs/portfolio/VocalTrainer.jpeg"
-                        alt="VocaltrainerApp"
+                        alt="VocalTrainerApp"
                         layout="fill"
                         objectFit="cover"
                       />
