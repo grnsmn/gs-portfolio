@@ -72,8 +72,7 @@ const TecnologieCarousel = () => {
         pauseOnHover
         delay={0}
         play={true}
-        direction='right'
-        autoFill
+        direction='left'
       >
         {tecnologie.map((tech) => (
           <div key={tech.name} className='tecnologie-card mx-8 text-center'>
