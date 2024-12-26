@@ -64,7 +64,7 @@ const tecnologie = [
 
 const TecnologieCarousel = () => {
   return (
-    <div className="my-10">
+    <div className='my-10'>
       <Marquee
         gradient={false}
         speed={80}
@@ -72,18 +72,19 @@ const TecnologieCarousel = () => {
         pauseOnHover
         delay={0}
         play={true}
-        direction="left"
+        direction='right'
+        autoFill
       >
         {tecnologie.map((tech) => (
-          <div key={tech.name} className="tecnologie-card mx-8 text-center">
+          <div key={tech.name} className='tecnologie-card mx-8 text-center'>
             <Image
               src={tech.icon}
               alt={tech.name}
               width={64}
               height={64}
-              className="icon-background mx-auto"
+              className='icon-background mx-auto'
             />
-            <span className="block mt-2 text-lg font-semibold">
+            <span className='block mt-2 text-lg font-semibold'>
               {tech.name}
             </span>
           </div>
