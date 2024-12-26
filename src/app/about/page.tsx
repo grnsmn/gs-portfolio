@@ -1,5 +1,7 @@
 import type { NextPage } from "next";
 import Tecnologies from "../../components/technologies"
+import Link from "next/link";
+
 const About: NextPage = () => {
   return (
     <main>
@@ -17,8 +19,10 @@ const About: NextPage = () => {
                   <h2>
                     Simone Guarnuccio <span>Frontend Developer</span>
                   </h2>
-
-                  <p>I am Simone, an Enthusiastic Developer with experience building beautiful and user-friendly mobile applications using React Native at Creationdose, a Catania, Italy-based creator economy company.</p>
+                    <p>I am Simone, an Enthusiastic Developer with experience building beautiful and user-friendly mobile applications using React Native.<br />
+                    Currently, I am working with an amazing product team at <Link href="https://www.creationdose.com/">Creationdose</Link>, a creator economy company based in Catania, Italy.
+                  <br />
+                  </p>
                   <p> I thrive on automating workflows and tackling the challenges of cross-platform development. I am a passionate learner, constantly seeking new advancements in this ever-evolving field.</p>
                 </div>
               </div>
@@ -45,10 +49,8 @@ const About: NextPage = () => {
                           <h4 className="timeline-title">Front-End Developer</h4>
                           <p className="timeline-text">
                           Creationdose, Catania, Italy <br/>
-                          • Developement of company Design Systems 
-                          • Maintenance of company website <br/>
-                          • Maintenance of company website <br/>
-                          • Maintenance of mobile applications (Vidoser)
+                          • Maintainance Design Systems <br/>
+                          • Maintenance <Link href={'https://vidoser.com/it/'}>Vidoser App</Link> and all the libraries used in the project <br/>
                           </p>
                         </div>
                         {/* Timeline Item end */}
