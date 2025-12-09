@@ -37,8 +37,8 @@ const Portfolio: NextPage = () => {
                       <Image
                         src="/imgs/portfolio/VocalTrainer.jpeg"
                         alt="VocalTrainerApp"
-                        layout="fill"
-                        objectFit="cover"
+                        fill
+                        style={{ objectFit: 'cover' }}
                       />
                     </div>
                   </div>
@@ -61,8 +61,8 @@ const Portfolio: NextPage = () => {
                       <Image
                         src="/imgs/portfolio/SabaothCTDocs.jpeg"
                         alt="SabaothCTDocs"
-                        layout="fill"
-                        objectFit="cover"
+                        fill
+                        style={{ objectFit: 'cover' }}
                       />
                     </div>
                   </div>
