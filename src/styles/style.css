@@ -436,6 +436,21 @@ select {
   color: #504e70;
   margin: 0;
 }
+.about .about-content .about-text p a,
+.about .about-content .timeline-text a,
+.blog .blog-item-inner .blog-info .blog-tags a {
+  color: #2196f3;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.about .about-content .about-text p a:hover,
+.about .about-content .timeline-text a:hover,
+.blog .blog-item-inner .blog-info .blog-tags a:hover {
+  color: #1976d2;
+  text-decoration-thickness: 2px;
+}
 .about .about-content .personal-info {
   -ms-flex: 0 0 60%;
   flex: 0 0 60%;
@@ -1100,6 +1115,19 @@ select {
 [data-theme="dark"] .about .about-content .about-text p,
 [data-theme="dark"] .home .intro p {
   color: #e9e9e9;
+}
+[data-theme="dark"] .about .about-content .about-text p a,
+[data-theme="dark"] .about .about-content .timeline-text a,
+[data-theme="dark"] .blog .blog-item-inner .blog-info .blog-tags a {
+  color: #64b5f6;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+[data-theme="dark"] .about .about-content .about-text p a:hover,
+[data-theme="dark"] .about .about-content .timeline-text a:hover,
+[data-theme="dark"] .blog .blog-item-inner .blog-info .blog-tags a:hover {
+  color: #90caf9;
+  text-decoration-thickness: 2px;
 }
 [data-theme="dark"] .aside,
 [data-theme="dark"] .contact .contact-form .form-item .form-control,
