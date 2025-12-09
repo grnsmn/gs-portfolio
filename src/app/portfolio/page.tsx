@@ -4,15 +4,15 @@ import Image from "next/image";
 const Portfolio: NextPage = () => {
   return (
     <div>
-      <section className="portfolio section" id="portfolio">
-        <div className="container">
-          <div className="row">
-            <div className="section-title padd-15">
+      <section className='portfolio section' id='portfolio'>
+        <div className='container'>
+          <div className='row'>
+            <div className='section-title padd-15'>
               <h2>Portfolio</h2>
             </div>
           </div>
-          <div className="row">
-            <div className="portfolio-filter padd-15">
+          <div className='row'>
+            <div className='portfolio-filter padd-15'>
               {/* <button type="button" className="active" data-filter="all">
                 All
               </button> */}
@@ -27,50 +27,76 @@ const Portfolio: NextPage = () => {
               </button> */}
             </div>
           </div>
-          <div className="row">
+          <div className='row'>
             {/* Portfolio Item */}
-            <div className="portfolio-item padd-15" data-category="cross-platform-app">
-              <div className="portfolio-item-inner shadow-dark">
-                <a href="https://vocaltrainer.netlify.app" target="_blank" rel="noopener noreferrer">
-                <div className="portfolio-img">
-                    <div style={{ position: 'relative', width: '100%', height: '14rem' }}>
+            <div
+              className='portfolio-item padd-15'
+              data-category='cross-platform-app'
+            >
+              <div className='portfolio-item-inner shadow-dark'>
+                <a
+                  href='https://vocaltrainer.netlify.app'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <div className='portfolio-img'>
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        height: "14rem",
+                      }}
+                    >
                       <Image
-                        src="/imgs/portfolio/VocalTrainer.jpeg"
-                        alt="VocalTrainerApp"
+                        src='/imgs/portfolio/VocalTrainer.jpeg'
+                        alt='VocalTrainerApp'
                         fill
-                        style={{ objectFit: 'cover' }}
+                        style={{ objectFit: "cover" }}
                       />
                     </div>
                   </div>
-                  <div className="portfolio-info">
-                      <h4>Vocal Trainer</h4>
-                      <div className="icon">
-                        <i className="fa fa-chevron-right"></i>
-                      </div>
+                  <div className='portfolio-info'>
+                    <h4>Vocal Trainer</h4>
+                    <div className='icon'>
+                      <i className='fa fa-chevron-right'></i>
+                    </div>
                   </div>
                 </a>
               </div>
             </div>
             {/* Portfolio Item End */}
             {/* Portfolio Item */}
-            <div className="portfolio-item padd-15" data-category="cross-platform-app">
-              <div className="portfolio-item-inner shadow-dark">
-                <a href="https://sabaothctdocs.netlify.app" target="_blank" rel="noopener noreferrer">
-                  <div className="portfolio-img">
-                    <div style={{ position: 'relative', width: '100%', height: '14rem' }}>
+            <div
+              className='portfolio-item padd-15'
+              data-category='cross-platform-app'
+            >
+              <div className='portfolio-item-inner shadow-dark'>
+                <a
+                  href='https://sabaothctdocs.netlify.app'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <div className='portfolio-img'>
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        height: "14rem",
+                      }}
+                    >
                       <Image
-                        src="/imgs/portfolio/SabaothCTDocs.jpeg"
-                        alt="SabaothCTDocs"
+                        src='/imgs/portfolio/SabaothCTDocs.jpeg'
+                        alt='SabaothCTDocs'
                         fill
-                        style={{ objectFit: 'cover' }}
+                        style={{ objectFit: "cover" }}
                       />
                     </div>
                   </div>
-                  <div className="portfolio-info">
-                      <h4>Documentation APS Sabaoth Catania</h4>
-                      <div className="icon">
-                        <i className="fa fa-chevron-right"></i>
-                      </div>
+                  <div className='portfolio-info'>
+                    <h4>Documentation APS Sabaoth Catania</h4>
+                    <div className='icon'>
+                      <i className='fa fa-chevron-right'></i>
+                    </div>
                   </div>
                 </a>
               </div>

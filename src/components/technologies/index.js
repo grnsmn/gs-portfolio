@@ -9,6 +9,10 @@ const tecnologie = [
     icon: "https://cdn.jsdelivr.net/npm/simple-icons@v12/icons/javascript.svg",
   },
   {
+    name: "Typescript",
+    icon: "https://cdn.jsdelivr.net/npm/simple-icons@v12/icons/typescript.svg",
+  },
+  {
     name: "React",
     icon: "https://cdn.jsdelivr.net/npm/simple-icons@v12/icons/react.svg",
   },
@@ -45,8 +49,16 @@ const tecnologie = [
     icon: "https://cdn.jsdelivr.net/npm/simple-icons@v12/icons/firebase.svg",
   },
   {
+    name: "Appwrite",
+    icon: "https://cdn.jsdelivr.net/npm/simple-icons@v12/icons/appwrite.svg",
+  },
+  {
     name: "i18next",
     icon: "https://cdn.jsdelivr.net/npm/simple-icons@v12/icons/i18next.svg",
+  },
+  {
+    name: "eslint",
+    icon: "https://cdn.jsdelivr.net/npm/simple-icons@v12/icons/eslint.svg",
   },
   {
     name: "docusaurus",
@@ -68,14 +80,18 @@ const TecnologieCarousel = () => {
       <Marquee
         gradient={false}
         speed={80}
-        pauseOnClick={true}
-        pauseOnHover
+        pauseOnClick={false}
+        pauseOnHover={false}
         delay={0}
         play={true}
         direction='left'
+        loop={0}
       >
-        {tecnologie.map((tech) => (
-          <div key={tech.name} className='tecnologie-card mx-8 text-center'>
+        {[...tecnologie, ...tecnologie].map((tech, index) => (
+          <div
+            key={`${tech.name}-${index}`}
+            className='tecnologie-card mx-8 text-center'
+          >
             <Image
               src={tech.icon}
               alt={tech.name}
