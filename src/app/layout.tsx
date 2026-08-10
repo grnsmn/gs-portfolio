@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
-import "../styles/style.css";
-import "../styles/blue.css";
-import "../styles/theme.css";
-import Sidebar from "@/components/sidebar/sidebar";
+import { SkipLink } from "@/components/layout/skip-link";
+import { SiteHeader } from "@/components/layout/site-header";
+import { SiteFooter } from "@/components/layout/site-footer";
 import Providers from "./providers";
-import ThemeSwitch from "@/components/panel/ThemeSwitch";
 
-const inter = Inter({ subsets: ["latin"] });
+const geistSans = Geist({ subsets: ["latin"], variable: "--font-geist-sans" });
+const geistMono = Geist_Mono({
+  subsets: ["latin"],
+  variable: "--font-geist-mono",
+});
 
 export const metadata: Metadata = {
   title: "Simone Guarnuccio",
@@ -22,12 +24,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable}`}
+      suppressHydrationWarning
+    >
+      <body>
         <Providers>
-          <ThemeSwitch />
-          <Sidebar />
-          {children}
+          <SkipLink />
+          <SiteHeader />
+          <main id="main">{children}</main>
+          <SiteFooter />
         </Providers>
         <Analytics />
       </body>

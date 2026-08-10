@@ -1,14 +1,16 @@
-# Readme Portfolio di Simone Guarnuccio
+# Readme Portfolio by Simone Guarnuccio
 
-![Portfolio Sceeen](/public/imgs/site-screen.png)
+Online on [simoneguarnuccio.vercel.app](https://simoneguarnuccio.vercel.app)
 
-## Descrizione
+![Portfolio preview](/public/imgs/preview.webp)
 
-Questo repository contiene il codice sorgente del sito portfolio di Simone Guarnuccio, un frontend developer con esperienza in React e Next.js. Il sito è progettato per mostrare i suoi progetti, competenze ed esperienze lavorative in modo chiaro e conciso.
+## Description
 
-## Tecnologie utilizzate
+This repository contains the source code of the portfolio site of Simone Guarnuccio, a frontend developer with experience in React and Next.js. The site is designed to showcase your projects, skills and work experience in a clear and concise manner.
 
-- Next.js: un framework React per la creazione di applicazioni web statiche e server-side rendering.
-- React: una libreria JavaScript per la creazione di interfacce utente dinamiche.
-- CSS: per lo styling del sito web.
-- Font Awesome e SimpleIcons: per le icone.
+## Technologies used
+
+- Next.js: a React framework for building static web applications and server-side rendering.
+- React: A JavaScript library for building dynamic user interfaces.
+- CSS: for website styling.
+- Font Awesome and SimpleIcons: for icons.
