@@ -17,6 +17,7 @@ import {
   SiGitlab,
   SiNetlify,
   SiVercel,
+  SiClaude,
 } from "react-icons/si";
 // Nessuna icona di brand per NativeWind in Simple Icons: LuWind è il
 // riferimento visivo più vicino disponibile, non un logo ufficiale.
@@ -47,4 +48,5 @@ export const stack: readonly StackItem[] = [
   { name: "GitLab", icon: SiGitlab },
   { name: "Netlify", icon: SiNetlify },
   { name: "Vercel", icon: SiVercel },
+  { name: "Claude", icon: SiClaude },
 ] as const;
